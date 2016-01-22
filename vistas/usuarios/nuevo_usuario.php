@@ -115,7 +115,7 @@
 	</main>
 
 
-	<script src="../../recursos/js/jquery-2.1.4.min.js"></script>
+	<script src="../../recursos/js/jquery-2.2.0.min.js"></script>
 	<script src="../../recursos/js/materialize.min.js"></script>
 	<script src="../../recursos/js/slidebars.min.js"></script>
 
