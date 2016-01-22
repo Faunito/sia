@@ -15,7 +15,7 @@
 	<!-- Slidebar -->
 	<div class="sb-slidebar sb-left sb-style-overlay">
 	    <ul class="sb-menu">
-			<li><img src="img/logo.png" alt=""></li>
+			<li><img src="recursos/img/logo.png" alt=""></li>
 			<li class="sb-close"><a href="#">Usuarios</a></li>
 			<li class="sb-close"><a href="#">Gráficos</a></li>
 			<li class="sb-close"><a href="#">Evaluaciones</a></li>
