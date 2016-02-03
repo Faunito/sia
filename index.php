@@ -54,24 +54,36 @@
 			    	<div class="card  hoverable">
 					    <div class="card-content">
 					    	<span class="card-title">Ingreso al sistema</span>
-							<form method="POST" action="">
+							<form method="POST" action="vistas/home.php" id="login">
 				            <!--<form method="POST">-->
 				                <div class="row">
 				                    <div class="input-field col s12 m10 offset-m1">
-				                        <input type="text" id="user" class="login-input" name="username" required>
-										<label for="username">Usuario</label>
+				                        <input type="text" id="email" class="login-input" name="email" required>
+										<label for="email">Email</label>
 				                    </div>
 				                </div>
 				                <div class="row">
 				                    <div class="input-field col s12 m10 offset-m1">
-				                        <input type="password" id="pass" class="login-input" name="password" required>
+				                        <input type="password" id="password" class="login-input" name="password" required>
 										<label for="pasword">Contraseña</label>
+				                    </div>
+				                </div>
+				                <div class="row">
+				                    <div class="input-field col s12 m10 offset-m1">
+				                    	<select name="tipoFuncionario">
+									      	<option value="" disabled selected>Elija un tipo</option>
+									      	<option value="profesor">Profesor</option>
+									    	<option value="secretaria">Secretaria</option>									      										    
+									    </select>
+				                    <!--    <input type="password" id="pass" class="login-input" name="password" required>
+										<label for="pasword">Contraseña</label>-->
+										<label >Funcionario</label>
 				                    </div>
 				                </div>
 				                <div class="row">
 				                    <div class="col  m10 offset-m1">
 				                        <p class="right-align">
-				                            <button class="btn btn-large waves-effect waves-light color_primario" type="button" name="action">Ingresar</button>
+				                            <button class="btn btn-large waves-effect waves-light color_primario" type="submit" form="login" name="action">Ingresar</button>
 				                        </p>
 				                    </div>
 				                </div>
