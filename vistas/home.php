@@ -4,12 +4,7 @@
 
 	$controladorUsuarios = new UserControllerClass();
 	$respuesta = $controladorUsuarios->login( $_POST["email"], $_POST["password"],$_POST["tipoFuncionario"]);
-
-	if ($respuesta == 1){
-		//cargar vista
+	//echo $_SESSION['sesion_usuario'];
+	
+	echo $respuesta;
 		
-	}
-	else{
-		//redirigir a index.php
-		echo '<script> window.location="index.php";</script>';
-	}
