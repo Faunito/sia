@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -7,21 +6,20 @@
 	<link rel="stylesheet" href="recursos/css/materialize.min.css">
 	<link rel="stylesheet" href="recursos/css/estilo.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+	<link rel="stylesheet" href="//cdn.materialdesignicons.com/1.2.65/css/materialdesignicons.min.css">
 </head>
 <body>
 
-
-	<!-- Slidebar -->
+<!-- Slidebar -->
 	<div class="sb-slidebar sb-left sb-style-overlay">
 	    <ul class="sb-menu">
 			<li><img src="recursos/img/logo.png" alt=""></li>
 			<li class="sb-close"><a href="#">Usuarios</a></li>
-			<li class="sb-close"><a href="#">Gráficos</a></li>
+			<li class="sb-close"><a href="#">Prácticas</a></li>
 			<li class="sb-close"><a href="#">Evaluaciones</a></li>
-			<li class="sb-close"><a href="#">Gestionar</a></li>
-			<li class="sb-close"><a href="#">Mostrar</a></li>
-			<li class="sb-close"><a href="#">Opciones</a></li>
+			<li class="sb-close"><a href="#">Mallas</a></li>
+			<li class="sb-close"><a href="#">Asignaturas</a></li>
+			<li class="sb-close"><a href="#">Competencias</a></li>
 		</ul>
     </div>
 	
@@ -39,12 +37,12 @@
 					<li> <a class='orange' href='index.php'><i class="sb-toggle-left material-icons right">dehaze</i></a></li>
 				</ul>
 				<ul class="right">
-			    	<li><a href="#">ingresar</a></li>
+			    	<li><a href="vistas/usuarios/nuevo_usuario.php"><i class="material-icons right">account_circle</i>Registrarse</a></li>
 			    </ul>
 			</div>
 		</nav>			
 	</header>
-
+	
 	<main id="sb-site" class="blue-grey lighten-5">
 		<div class="container">		
 
@@ -98,7 +96,6 @@
 		</div>	
 	</main>
 
-
 	<script src="recursos/js/jquery-2.2.0.min.js"></script>
 	<script src="recursos/js/materialize.min.js"></script>
 	<script src="recursos/js/slidebars.min.js"></script>
@@ -111,6 +108,5 @@
 	    });
 	  }) (jQuery);
 	</script>
-
 </body>
 </html>

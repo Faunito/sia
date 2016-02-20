@@ -22,6 +22,7 @@
 			<li class="sb-close"><a href="../competencias/competencias.php">Competencias</a></li>
 		</ul>
     </div>
+
 	
 	<!-- Contenedor principal -->
 
@@ -42,7 +43,6 @@
 			</div>
 		</nav>			
 	</header>
-
 	<main id="sb-site" class="blue-grey lighten-5">
 		<div class="container">		
 
@@ -51,13 +51,13 @@
 		        <div class="col s12 m12">
 		          	<div class="card  hoverable">
 			            <div class="card-content">
-			              	<span class="card-title">Registrar nuevo usuario</span>
+			              	<span class="card-title">Ingrese nueva asignatura</span>
 			              	
 							<form id="myForm" action="#" method="POST">
 					            <div class="row">
 					                <div class=" col s4 offset-s4 input-field col s4">
-					                    <input id="rut" name="rut_cliente" type="text">
-					                    <label for="rut_cliente">Rut *</label>
+					                    <input id="rut" name="rut_cliente" type="text" class="validate">
+					                    <label for="rut_cliente">Codigo *</label>
 					                </div>
 					                <div class=" col s4 offset-s4 input-field">       
 					                    <input id="nombre" name="nombre" type="text" class="validate">
@@ -65,32 +65,7 @@
 					                </div>
 					                <div class=" col s4 offset-s4 input-field">       
 					                    <input id="apaterno" name="apaterno" type="text" class="validate">
-					                    <label for="apaterno">Apellido paterno *</label>
-					                </div>
-					                <div class=" col s4 offset-s4 input-field">       
-					                    <input id="amaterno" name="amaterno" type="text" class="validate">
-					                    <label for="amaterno">Apellido materno *</label>
-					                </div>
-					                <div class=" col s4 offset-s4 input-field col s4">
-					                    <input id="email" name="email" type="text">
-					                    <label for="email">Email *</label>
-					                </div>
-					                <div class="col s4 offset-s4 input-field col s4">
-									    <select>
-									      	<option value="" disabled selected>Elija una opción</option>
-									      	<option value="1">Administrativo</option>
-									      	<option value="2">Profesorado</option>
-									      	<option value="3">Directivo</option>
-									    </select>
-								    	<label>Cargo</label>
-								  	</div>
-					                <div class=" col s4 offset-s4 input-field col s4">
-					                    <input id="pass" name="pass" type="password" >
-					                    <label for="pass">Contraseña *</label>
-					                </div>
-					                <div class=" col s4 offset-s4 input-field col s4">
-					                    <input id="pass2" name="pass2" type="password" >
-					                    <label for="pass2">Confirmar contraseña *</label>
+					                    <label for="apaterno">Nivel *</label>
 					                </div>
 					            </div>
 
@@ -115,14 +90,13 @@
 	<script src="../../recursos/js/jquery-2.2.0.min.js"></script>
 	<script src="../../recursos/js/materialize.min.js"></script>
 	<script src="../../recursos/js/slidebars.min.js"></script>
-
 	<script>
 	  (function($) {
 	    $(document).ready(function() {
 	      $.slidebars();
 	      $('select').material_select();
 	    });
-	  })(jQuery);
+	  }) (jQuery);
 	</script>
 </body>
 </html>
