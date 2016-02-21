@@ -50,16 +50,19 @@
 			<div class="row center" style="margin-top:100px;">
 		        <div class="col s12 m12">
 		          	<div class="card  hoverable">
+		          		<div class="card-image">
+			          		<img src="../../recursos/img/hola.jpg">
+				            <span class="card-title"><strong><h4>Mallas</h4></strong></span>
+				        </div>
 			            <div class="card-content">
-			              	<span class="card-title">Mallas</span>
 			                <div class="row">
 			                	<div class="col s4">
 				                	<div class="card hoverable">
 				                		<div class="card-content">
 				              				<span class="card-title">Nueva Malla</span>
-				              				<p>Ingrese una nueva malla e incluya las asignaturas correspondientes</p>
+				              				<p>Ingrese una nueva malla curricular e incluya las asignaturas correspondientes</p>
 				              				<div class="card-action">
-             									<a class="waves-effect waves-light btn color_primario" href="nueva_asignatura.php"><i class="material-icons right">add</i>Registrar</a>
+             									<a class="waves-effect waves-light btn color_primario" href="nueva_asignatura.php">Registrar<i class="mdi mdi-table-large right"></i></a>
             								</div>
 				              			</div>
 				              		</div>
@@ -68,9 +71,9 @@
 				                	<div class="card hoverable">
 				                		<div class="card-content">
 				              				<span class="card-title">Modificar Malla</span>
-				              				<p>Modifique una malla ya existente en el sistema</p>
+				              				<p>Modifique una malla curricular ya existente en el sistema</p>
 				              				<div class="card-action">
-             									<a class="waves-effect waves-light btn color_primario"><i class="material-icons right">create</i>Modificar</a>
+             									<a class="waves-effect waves-light btn color_primario">Modificar<i class="mdi mdi-table-edit right"></i></a>
             								</div>
 				              			</div>
 				              		</div>
@@ -81,7 +84,7 @@
 				              				<span class="card-title">Ver malla</span>
 				              				<p>Visualice una malla con todas sus asignaturas y competencias ordenadas por nivel</p>
 				              				<div class="card-action">
-             									<a class="waves-effect waves-light btn color_primario"><i class="material-icons right">cloud</i>button</a>
+             									<a class="waves-effect waves-light btn color_primario">Ver<i class="mdi mdi-eye right"></i></a>
             								</div>
 				              			</div>
 				              		</div>
@@ -90,30 +93,9 @@
 				                	<div class="card hoverable">
 				                		<div class="card-content">
 				              				<span class="card-title">Extraer malla</span>
-				              				<p>Extraiga una malla ya existente en el sistema UNICO</p>
+				              				<p>Extraiga una malla curricular ya existente en el sistema UNICO</p>
 				              				<div class="card-action">
-             									<a class="waves-effect waves-light btn color_primario"><i class="material-icons right">cloud</i>button</a>
-            								</div>
-				              			</div>
-				              		</div>
-			              		</div>
-			              		<div class="col s4">
-				                	<div class="card hoverable">
-				                		<div class="card-content">
-				              				<span class="card-title">Vacio</span>
-				              				<p>Vacio</p>
-				              				<div class="card-action">
-             									<a class="waves-effect waves-light btn color_primario"><i class="material-icons right">cloud</i>button</a>
-            								</div>
-				              			</div>
-				              		</div>
-			              		</div><div class="col s4">
-				                	<div class="card hoverable">
-				                		<div class="card-content">
-				              				<span class="card-title">Vacio</span>
-				              				<p>Vacio</p>
-				              				<div class="card-action">
-             									<a class="waves-effect waves-light btn color_primario"><i class="material-icons right">cloud</i>button</a>
+             									<a class="waves-effect waves-light btn color_primario">Extraer<i class="mdi mdi-content-duplicate right"></i></a>
             								</div>
 				              			</div>
 				              		</div>
