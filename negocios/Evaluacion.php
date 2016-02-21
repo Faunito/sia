@@ -4,7 +4,7 @@ require_once ('Practica.php');
 /**
  * @author Freddy
  * @version 1.0
- * @created 25-Ene.-2016 21:31:25
+ * @created 19-Feb.-2016 19:48:55
  */
 class Evaluacion
 {

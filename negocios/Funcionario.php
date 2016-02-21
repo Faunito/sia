@@ -4,7 +4,7 @@ require_once ('Persona.php');
 /**
  * @author Freddy
  * @version 1.0
- * @created 25-Ene.-2016 21:31:26
+ * @created 19-Feb.-2016 19:48:56
  */
 class Funcionario extends Persona
 {
@@ -12,12 +12,6 @@ class Funcionario extends Persona
 	var $cargo;
 	var $correoElectronico;
 	var $password;
-
-	function Funcionario()
-	{
-	}
-
-
 
 	function getcorreoElectronico()
 	{

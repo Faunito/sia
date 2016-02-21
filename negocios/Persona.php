@@ -4,7 +4,7 @@
 /**
  * @author Freddy
  * @version 1.0
- * @created 25-Ene.-2016 21:31:26
+ * @created 19-Feb.-2016 19:48:56
  */
 class Persona
 {
@@ -13,13 +13,6 @@ class Persona
 	var $apellidoPaterno;
 	var $nombre;
 	var $rut;
-	var $telefonoCelular;
-	var $telefonoFijo;
-
-	function Persona()
-	{
-	}
-
 
 
 	function getapellidoMaterno()
@@ -40,16 +33,6 @@ class Persona
 	function getrut()
 	{
 		return $this->rut;
-	}
-
-	function gettelefonoCelular()
-	{
-		return $this->telefonoCelular;
-	}
-
-	function gettelefonoFijo()
-	{
-		return $this->telefonoFijo;
 	}
 
 	/**
@@ -86,24 +69,6 @@ class Persona
 	function setrut($newVal)
 	{
 		$this->rut = $newVal;
-	}
-
-	/**
-	 * 
-	 * @param newVal
-	 */
-	function settelefonoCelular($newVal)
-	{
-		$this->telefonoCelular = $newVal;
-	}
-
-	/**
-	 * 
-	 * @param newVal
-	 */
-	function settelefonoFijo($newVal)
-	{
-		$this->telefonoFijo = $newVal;
 	}
 
 }

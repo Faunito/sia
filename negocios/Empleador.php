@@ -5,7 +5,7 @@ require_once ('Evaluacion.php');
 /**
  * @author Freddy
  * @version 1.0
- * @created 25-Ene.-2016 21:31:24
+ * @created 19-Feb.-2016 19:48:54
  */
 class Empleador extends Persona
 {

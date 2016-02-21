@@ -5,15 +5,22 @@ require_once ('Profesor.php');
 /**
  * @author Freddy
  * @version 1.0
- * @created 25-Ene.-2016 21:31:27
+ * @created 19-Feb.-2016 19:48:56
  */
 class ProgramaCurricular
 {
 
-	var $contenido;
+	var $bibliografia;
+	var $carrera;
+	var $decripcionEvaluacion;
+	var $descripcion;
 	var $fechaEvaluacion;
+	var $horas;
 	var $idProgramaCurricular;
+	var $motodologia;
 	var $objetivoGeneralAsignatura;
+	var $preRequisito;
+	var $unidades;
 	var $m_Asignatura;
 	var $m_Profesor;
 
@@ -23,9 +30,24 @@ class ProgramaCurricular
 
 
 
-	function getcontenido()
+	function getbibliografia()
 	{
-		return $this->contenido;
+		return $this->bibliografia;
+	}
+
+	function getcarrera()
+	{
+		return $this->carrera;
+	}
+
+	function getdecripcionEvaluacion()
+	{
+		return $this->decripcionEvaluacion;
+	}
+
+	function getdescripcion()
+	{
+		return $this->descripcion;
 	}
 
 	function getfechaEvaluacion()
@@ -33,9 +55,19 @@ class ProgramaCurricular
 		return $this->fechaEvaluacion;
 	}
 
+	function gethoras()
+	{
+		return $this->horas;
+	}
+
 	function getidProgramaCurricular()
 	{
 		return $this->idProgramaCurricular;
+	}
+
+	function getmotodologia()
+	{
+		return $this->motodologia;
 	}
 
 	function getobjetivoGeneralAsignatura()
@@ -43,13 +75,50 @@ class ProgramaCurricular
 		return $this->objetivoGeneralAsignatura;
 	}
 
+	function getpreRequisito()
+	{
+		return $this->preRequisito;
+	}
+
+	function getunidades()
+	{
+		return $this->unidades;
+	}
+
 	/**
 	 * 
 	 * @param newVal
 	 */
-	function setcontenido($newVal)
+	function setbibliografia($newVal)
 	{
-		$this->contenido = $newVal;
+		$this->bibliografia = $newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	function setcarrera($newVal)
+	{
+		$this->carrera = $newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	function setdecripcionEvaluacion($newVal)
+	{
+		$this->decripcionEvaluacion = $newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	function setdescripcion($newVal)
+	{
+		$this->descripcion = $newVal;
 	}
 
 	/**
@@ -65,6 +134,15 @@ class ProgramaCurricular
 	 * 
 	 * @param newVal
 	 */
+	function sethoras($newVal)
+	{
+		$this->horas = $newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
 	function setidProgramaCurricular($newVal)
 	{
 		$this->idProgramaCurricular = $newVal;
@@ -74,9 +152,36 @@ class ProgramaCurricular
 	 * 
 	 * @param newVal
 	 */
+	function setmotodologia($newVal)
+	{
+		$this->motodologia = $newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
 	function setobjetivoGeneralAsignatura($newVal)
 	{
 		$this->objetivoGeneralAsignatura = $newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	function setpreRequisito($newVal)
+	{
+		$this->preRequisito = $newVal;
+	}
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	function setunidades($newVal)
+	{
+		$this->unidades = $newVal;
 	}
 
 }

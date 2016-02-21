@@ -5,11 +5,12 @@ require_once ('Funcionario.php');
 require_once ('EvaluacionPracticaProfesor.php');
 require_once ('Evaluacion.php');
 require_once ('ProgramaCurricular.php');
+require_once ('../dato/BDProfesor.php');
 
 /**
  * @author Freddy
  * @version 1.0
- * @created 25-Ene.-2016 21:31:27
+ * @created 19-Feb.-2016 19:48:56
  */
 class Profesor extends Funcionario
 {
@@ -19,12 +20,17 @@ class Profesor extends Funcionario
 	var $m_EvaluacionPracticaProfesor;
 	var $m_Evaluacion;
 	var $m_ProgramaCurricular;
+	var $bdprofesor;
 
-	function Profesor()
+	function __construct()
 	{
+		$bdprofesor = new BDProfesor(); 
 	}
 
-
+	function getBDProfesor()
+	{	
+		return $bdprofesor;
+	}
 
 	/**
 	 * 
@@ -69,6 +75,21 @@ class Profesor extends Funcionario
 	function settitulo($newVal)
 	{
 		$this->titulo = $newVal;
+	}
+
+	//Funcion de Comprobación de Extracion de Datos
+	function toString()
+	{
+		$stringbulder = $this->getrut() . "\n";
+		$stringbulder .= $this->getnombre() . "\n";
+		$stringbulder .= $this->getapellidopaterno() . "\n";
+		$stringbulder .= $this->getapellidomaterno() . "\n";
+		$stringbulder .= $this->getcargo() . "\n";
+		$stringbulder .= $this->getcorreoElectronico() . "\n";
+		$stringbulder .= $this->getpassword() . "\n";
+		$stringbulder .= $this->area;
+
+		return $stringbulder;
 	}
 
 }

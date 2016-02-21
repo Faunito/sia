@@ -5,13 +5,12 @@ require_once ('Empleador.php');
 /**
  * @author Freddy
  * @version 1.0
- * @created 25-Ene.-2016 21:31:27
+ * @created 19-Feb.-2016 19:48:56
  */
 class Practica
 {
 
 	var $cargo;
-	var $carrera;
 	var $direccionPractica;
 	var $estadoPractica;
 	var $fachainicio;
@@ -36,11 +35,6 @@ class Practica
 	function getcargo()
 	{
 		return $this->cargo;
-	}
-
-	function getcarrera()
-	{
-		return $this->carrera;
 	}
 
 	function getdireccionPractica()
@@ -85,15 +79,6 @@ class Practica
 	function setcargo($newVal)
 	{
 		$this->cargo = $newVal;
-	}
-
-	/**
-	 * 
-	 * @param newVal
-	 */
-	function setcarrera($newVal)
-	{
-		$this->carrera = $newVal;
 	}
 
 	/**

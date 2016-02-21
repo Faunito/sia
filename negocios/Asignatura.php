@@ -4,7 +4,7 @@ require_once ('Competencia.php');
 /**
  * @author Freddy
  * @version 1.0
- * @created 25-Ene.-2016 21:31:24
+ * @created 19-Feb.-2016 19:48:54
  */
 class Asignatura
 {
@@ -14,7 +14,6 @@ class Asignatura
 	var $horasSemanales;
 	var $idAsignatura;
 	var $nombreAsignatura;
-	var $preRequisito;
 	var $semestre;
 	var $m_Competencia;
 
@@ -47,11 +46,6 @@ class Asignatura
 	function getnombreAsignatura()
 	{
 		return $this->nombreAsignatura;
-	}
-
-	function getpreRequisito()
-	{
-		return $this->preRequisito;
 	}
 
 	function getsemestre()
@@ -106,15 +100,6 @@ class Asignatura
 	function setnombreAsignatura($newVal)
 	{
 		$this->nombreAsignatura = $newVal;
-	}
-
-	/**
-	 * 
-	 * @param newVal
-	 */
-	function setpreRequisito($newVal)
-	{
-		$this->preRequisito = $newVal;
 	}
 
 	/**

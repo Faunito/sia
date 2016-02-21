@@ -1,31 +1,31 @@
 <?php 
 
 //require_once ("../conexiones/conexiones.php");
-require_once ("../conexiones/ConexionSep.php");
+//require_once ("../conexiones/ConexionSep.php");
+require_once ('../negocios/Profesor.php');
 
 class UserControllerClass{
+	private var $profesor;
+
+	public function getProfesor()
+	{
+		return $profesor;
+	}
 
 	public function login($email,$pass,$tipoFuncionario)
 	{
-
+		//llamada al profe solamente por haora
 		if($tipoFuncionario == 'profesor'){
-
-			$sql="SELECT * FROM profesor WHERE email ='".$email."' AND password ='".$pass."'";
+			//se instancia la clase profesor
+			$profesor = new Profesor();
+			//Se agregan los datos de Extracion de DB
+			$profesor->setpassword($email);
+			$profesor->setcorreoElectronico($pass);
+			//Comunicación con la Capa de Datos
+			$profesor->getBDProfesor()->Get($profesor);
 		}
 		else{
-			if($tipoFuncionario == 'secretaria'){
-				$sql="SELECT * FROM secretaria WHERE email ='".$email."' AND password ='".$pass."'";	
-			}
+			$profesor = NULL
 		}
-		// se ejectua la consulta y se usa el metodo con de la clase class para la conexion, y se guarda en $res lo que devuelve la consulta  
-		//$res=pg_query( Conectar::con(),$sql  );
-		$q = ConexionSep::getInstance();
-		$q1 = $q->getConnection()->prepare("SELECT * FROM profesor WHERE email = :email AND password = :password");
-		$q1 -> bindParam(':email',$email,PDO::PARAM_STR);
-		$q1 -> bindParam(':password',$pass,PDO::PARAM_STR);
-		$q1 -> execute();
-		
-		$res = $q1 ->fetchAll(PDO::FETCH_ASSOC);
-		return json_encode($res);		
 	}
 }
