@@ -11,9 +11,9 @@
 		//constructor
 		private function __construct(){
 	    $this->server = 'localhost';
-	    $this->user = 'postgres';
-	    $this->password = '72angelous19';
-	    $this->database = 'sep';
+	    $this->user = 'root';
+	    $this->password = '';
+	    $this->database = 'sia';
 	    $this->connection = $this->conectar();	    
   		}
   		//crear instancia 1 vez
@@ -31,7 +31,7 @@
 		private function conectar(){
 			
 		try{			
-			$connection1 = new PDO("pgsql:host=localhost;dbname=sep", "postgres", "72angelous19", array('charset'=>'utf8'));
+			$connection1 = new PDO("mysql:host=localhost;dbname=sia", "root", "", array('charset'=>'utf8'));
 			$connection1->query("SET CHARACTER SET utf8");
 			$connection1->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		}
