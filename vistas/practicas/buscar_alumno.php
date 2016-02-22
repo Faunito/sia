@@ -48,30 +48,22 @@
 
 			<!-- contenido del contenido principal -->
 			<div class="row center" style="margin-top:100px;">
-		        <div class="col s12 m12">
-		          	<div class="card">
+		        <div class="col s12 m6 offset-m3">
+		          	<div class="card  hoverable">
 			            <div class="card-content">
-			              	<span class="card-title">Ingrese nueva asignatura</span>
+			              	<span class="card-title">Ingrese el rut del alumno</span>
 			              	
 							<form id="myForm" action="#" method="POST">
 					            <div class="row">
-					                <div class=" col s4 offset-s4 input-field col s4">
-					                    <input id="codigo" name="codigo" type="text" class="validate">
-					                    <label for="codigo">Codigo *</label>
-					                </div>
-					                <div class=" col s4 offset-s4 input-field">       
-					                    <input id="nombre" name="nombre" type="text" class="validate">
-					                    <label for="nombre">Nombre *</label>
-					                </div>
-					                <div class=" col s4 offset-s4 input-field">       
-					                    <input id="nivel" name="nivel" type="text" class="validate">
-					                    <label for="nivel">Nivel *</label>
+					                <div class="input-field col s12 m10 offset-m1">
+					                    <input id="rut" name="rut" type="text" class="validate">
+					                    <label for="rut">Rut *</label>
 					                </div>
 					            </div>
 
 					            <div class="row center">
-						            <div class="col s2 offset-s6">
-							            <button id="btn" class="btn right waves-effect waves-light color_primario"  type="submit" name="action">Ingresar
+						            <div class="col s12 m10 offset-m1">
+							            <button id="btn" class="btn right waves-effect waves-light color_primario"  type="submit" name="action">Enviar
 							            <i class="material-icons right">send</i>
 							            </button>
 						            </div>

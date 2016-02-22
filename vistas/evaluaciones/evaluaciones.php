@@ -37,7 +37,7 @@
 					<li> <a class='orange' href='index.php'><i class="sb-toggle-left material-icons right">dehaze</i></a></li>
 				</ul>
 				<ul class="right">
-			    	<li><a href="../../index.php">Logout</a></li>
+			    	<li><a href="../../index.php"><i class="material-icons right">power_settings_new</i>Logout</a></li>
 			    </ul>
 			</div>
 		</nav>			

@@ -38,7 +38,7 @@
 					<li> <a class='orange' href='index.php'><i class="sb-toggle-left material-icons right">dehaze</i></a></li>
 				</ul>
 				<ul class="right">
-			    	<li><a href="../../index.php">Logout</a></li>
+			    	<li><a href="../../index.php"><i class="material-icons right">power_settings_new</i>Logout</a></li>
 			    </ul>
 			</div>
 		</nav>			
@@ -89,7 +89,9 @@
 				              			</div>
 				              		</div>
 			              		</div>
-			              		<div class="col s4">
+			              	</div>
+				            <div class="row">
+			              		<div class="col s4 offset-s4">
 				                	<div class="card hoverable">
 				                		<div class="card-content">
 				              				<span class="card-title">Asignar competencia a malla</span>

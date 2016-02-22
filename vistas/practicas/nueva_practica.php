@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="../../recursos/css/estilo.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="//cdn.materialdesignicons.com/1.2.65/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="../../recursos/css/datepicker-materialize-orange.css">
+	
 </head>
 <body>
 
@@ -49,9 +51,9 @@
 			<!-- contenido del contenido principal -->
 			<div class="row center" style="margin-top:100px;">
 		        <div class="col s12 m12">
-		          	<div class="card">
+		          	<div class="card  hoverable">
 			            <div class="card-content">
-			              	<span class="card-title">Ingrese nueva asignatura</span>
+			              	<span class="card-title">Ingrese una nueva práctica</span>
 			              	
 							<form id="myForm" action="#" method="POST">
 					            <div class="row">
@@ -60,12 +62,28 @@
 					                    <label for="codigo">Codigo *</label>
 					                </div>
 					                <div class=" col s4 offset-s4 input-field">       
-					                    <input id="nombre" name="nombre" type="text" class="validate">
-					                    <label for="nombre">Nombre *</label>
+					                    <input id="nivel" name="nivel" type="text" class="validate">
+					                    <label for="nivel">Nivel Práctica *</label>
 					                </div>
 					                <div class=" col s4 offset-s4 input-field">       
-					                    <input id="nivel" name="nivel" type="text" class="validate">
-					                    <label for="nivel">Nivel *</label>
+					                    <input id="cargo" name="cargo" type="text" class="validate">
+					                    <label for="cargo">Cargo *</label>
+					                </div>
+					                <div class=" col s4 offset-s4 input-field">       
+					                    <input id="direccion" name="direccion" type="text" class="validate">
+					                    <label for="direccion">Dirección *</label>
+					                </div>
+					                <div class=" col s4 offset-s4 input-field">       
+					                    <input id="fecha_inicio" name="fecha_inicio" type="text" class="datepicker">
+					                    <label for="fecha_inicio">Fecha inicio *</label>
+					                </div>
+					                <div class=" col s4 offset-s4 input-field">       
+					                    <input id="fecha_termino" name="fecha_termino" type="text" class="datepicker">
+					                    <label for="fecha_termino">Fecha termino *</label>
+					                </div>
+					                <div class=" col s4 offset-s4 input-field">       
+					                    <input id="horas" name="horas" type="text" class="validate">
+					                    <label for="horas">Horas *</label>
 					                </div>
 					            </div>
 
@@ -86,8 +104,7 @@
 		    
 		</div>	
 	</main>
-
-	<script src="../../recursos/js/jquery-2.2.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="../../recursos/js/materialize.min.js"></script>
 	<script src="../../recursos/js/slidebars.min.js"></script>
 	<script>
@@ -97,6 +114,19 @@
 	      $('select').material_select();
 	    });
 	  }) (jQuery);
-	</script>
+	    $('.DatePicker').pickadate({
+	        monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+	        monthsShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+	        weekdaysFull: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+	        weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sáb'],
+	        today: 'Hoy',
+	        clear: 'Borrar',
+	        close: 'Salir',
+	        selectMonths: true,
+	        selectYears: 200,
+	        format: 'dd-mm-yyyy',
+	        firstDay: 1
+    });
+</script>
 </body>
 </html>

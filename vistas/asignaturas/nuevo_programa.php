@@ -49,23 +49,43 @@
 			<!-- contenido del contenido principal -->
 			<div class="row center" style="margin-top:100px;">
 		        <div class="col s12 m12">
-		          	<div class="card">
+		          	<div class="card  hoverable">
 			            <div class="card-content">
-			              	<span class="card-title">Ingrese nueva asignatura</span>
+			              	<span class="card-title">Ingrese un nuevo programa</span>
 			              	
 							<form id="myForm" action="#" method="POST">
 					            <div class="row">
-					                <div class=" col s4 offset-s4 input-field col s4">
+					            	<div class=" col s4 offset-s4 input-field">       
 					                    <input id="codigo" name="codigo" type="text" class="validate">
 					                    <label for="codigo">Codigo *</label>
 					                </div>
-					                <div class=" col s4 offset-s4 input-field">       
-					                    <input id="nombre" name="nombre" type="text" class="validate">
-					                    <label for="nombre">Nombre *</label>
+					                <div class=" col s4 offset-s4 input-field col s4">
+					                    <input id="facultad" name="facultad" type="text" class="validate">
+					                    <label for="facultad">Facultad *</label>
 					                </div>
 					                <div class=" col s4 offset-s4 input-field">       
-					                    <input id="nivel" name="nivel" type="text" class="validate">
-					                    <label for="nivel">Nivel *</label>
+					                    <input id="carrera" name="carrera" type="text" class="validate">
+					                    <label for="carrera">Carrera *</label>
+					                </div>
+					                <div class=" col s4 offset-s4 input-field">       
+					                    <input id="horas" name="horas" type="text" class="validate">
+					                    <label for="horas">Horas *</label>
+					                </div>
+					                <div class=" col s4 offset-s4 input-field">       
+					                    <textarea id="descripcion" name="descripcion" class="materialize-textarea" length="1000"></textarea>
+            							<label for="descripcion">Descripción</label>
+					                </div>
+					               	<div class=" col s4 offset-s4 input-field">       
+					                    <textarea id="objetivos" name="objetivos" class="materialize-textarea" length="1000"></textarea>
+            							<label for="objetivos">Objetivos</label>
+					                </div>
+					                <div class=" col s4 offset-s4 input-field">       
+					                    <textarea id="metodologia" name="metodologia" class="materialize-textarea" length="1000"></textarea>
+            							<label for="metodologia">Metodología</label>
+					                </div>
+					                <div class=" col s4 offset-s4 input-field">       
+					                    <textarea id="evaluacion" name="evaluacion" class="materialize-textarea" length="2000"></textarea>
+            							<label for="evaluacion">Evaluación</label>
 					                </div>
 					            </div>
 

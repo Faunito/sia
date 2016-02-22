@@ -88,13 +88,15 @@
 				              			</div>
 				              		</div>
 			              		</div>
+		              		</div>
+			                <div class="row">
 			              		<div class="col s4">
 				                	<div class="card hoverable">
 				                		<div class="card-content">
 				              				<span class="card-title">Nuevo programa</span>
 				              				<p>Ingrese un nuevo programa para una asignatura ya existente en el sistema</p>
 				              				<div class="card-action">
-             									<a class="waves-effect waves-light btn color_primario"><i class="material-icons right">note_add</i>Registrar</a>
+             									<a class="waves-effect waves-light btn color_primario" href="nuevo_programa.php"><i class="material-icons right">note_add</i>Registrar</a>
             								</div>
 				              			</div>
 				              		</div>

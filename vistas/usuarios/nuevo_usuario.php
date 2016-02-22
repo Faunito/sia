@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="//cdn.materialdesignicons.com/1.2.65/css/materialdesignicons.min.css">
 </head>
 <body>
-
 <!-- Slidebar -->
 	<div class="sb-slidebar sb-left sb-style-overlay">
 	    <ul class="sb-menu">
@@ -22,6 +21,8 @@
 			<li class="sb-close"><a href="../competencias/competencias.php">Competencias</a></li>
 		</ul>
     </div>
+
+	
 	
 	<!-- Contenedor principal -->
 
@@ -32,12 +33,11 @@
 				<a href="#" class="brand-logo center">
 					Sistema laravel facilito
 				</a>
-
 				<ul class="left">
 					<li> <a class='orange' href='index.php'><i class="sb-toggle-left material-icons right">dehaze</i></a></li>
 				</ul>
 				<ul class="right">
-			    	<li><a href="../../index.php">Logout</a></li>
+			    	<li><a href="../../index.php"><i class="material-icons right">power_settings_new</i>Logout</a></li>
 			    </ul>
 			</div>
 		</nav>			
@@ -56,8 +56,8 @@
 							<form id="myForm" action="#" method="POST">
 					            <div class="row">
 					                <div class=" col s4 offset-s4 input-field col s4">
-					                    <input id="rut" name="rut_cliente" type="text">
-					                    <label for="rut_cliente">Rut *</label>
+					                    <input id="rut" name="rut" type="text">
+					                    <label for="rut">Rut *</label>
 					                </div>
 					                <div class=" col s4 offset-s4 input-field">       
 					                    <input id="nombre" name="nombre" type="text" class="validate">

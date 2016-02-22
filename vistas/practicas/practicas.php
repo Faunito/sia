@@ -37,7 +37,7 @@
 					<li> <a class='orange' href='index.php'><i class="sb-toggle-left material-icons right">dehaze</i></a></li>
 				</ul>
 				<ul class="right">
-			    	<li><a href="../../index.php">Logout</a></li>
+			    	<li><a href="../../index.php"><i class="material-icons right">power_settings_new</i>Logout</a></li>
 			    </ul>
 			</div>
 		</nav>			
@@ -59,9 +59,9 @@
 				                	<div class="card hoverable">
 				                		<div class="card-content">
 				              				<span class="card-title">Nueva práctica</span>
-				              				<p>Ingrese una nueva práctica</p>
+				              				<p>Ingrese una nueva práctica profesional</p>
 				              				<div class="card-action">
-             									<a class="waves-effect waves-light btn color_primario" href="nueva_asignatura.php"><i class="material-icons right">note_add</i>Registrar</a>
+             									<a class="waves-effect waves-light btn color_primario" href="buscar_alumno.php"><i class="material-icons right">note_add</i>Registrar</a>
             								</div>
 				              			</div>
 				              		</div>
@@ -70,7 +70,7 @@
 				                	<div class="card hoverable">
 				                		<div class="card-content">
 				              				<span class="card-title">Modificar práctica</span>
-				              				<p>Modifique una práctica ya existente en el sistema</p>
+				              				<p>Modifique una práctica ya existente</p>
 				              				<div class="card-action">
              									<a class="waves-effect waves-light btn color_primario"><i class="material-icons right">edit</i>Modificar</a>
             								</div>
@@ -81,7 +81,7 @@
 				                	<div class="card hoverable">
 				                		<div class="card-content">
 				              				<span class="card-title">Ver práctica</span>
-				              				<p>Visualice una práctica ya existente en el sistema</p>
+				              				<p>Visualice una práctica ya existente</p>
 				              				<div class="card-action">
              									<a class="waves-effect waves-light btn color_primario">Ver<i class="mdi mdi-eye right"></i></a>
             								</div>

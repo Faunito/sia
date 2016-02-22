@@ -38,7 +38,7 @@
 					<li> <a class='orange' href='index.php'><i class="sb-toggle-left material-icons right">dehaze</i></a></li>
 				</ul>
 				<ul class="right">
-			    	<li><a href="../../index.php">Logout</a></li>
+			    	<li><a href="../../index.php"><i class="material-icons right">power_settings_new</i>Logout</a></li>
 			    </ul>
 			</div>
 		</nav>			
@@ -49,7 +49,7 @@
 			<!-- contenido del contenido principal -->
 			<div class="row center" style="margin-top:100px;">
 		        <div class="col s12 m12">
-		          	<div class="card  hoverable">
+		          	<div class="card">
 		          		<div class="card-image">
 			          		<img src="../../recursos/img/hola.jpg">
 				            <span class="card-title"><strong><h4>Mallas</h4></strong></span>
@@ -62,7 +62,7 @@
 				              				<span class="card-title">Nueva Malla</span>
 				              				<p>Ingrese una nueva malla curricular e incluya las asignaturas correspondientes</p>
 				              				<div class="card-action">
-             									<a class="waves-effect waves-light btn color_primario" href="nueva_asignatura.php">Registrar<i class="mdi mdi-table-large right"></i></a>
+             									<a class="waves-effect waves-light btn color_primario" href="opcion_malla.php">Registrar<i class="mdi mdi-table-large right"></i></a>
             								</div>
 				              			</div>
 				              		</div>
@@ -89,18 +89,7 @@
 				              			</div>
 				              		</div>
 			              		</div>
-			              		<div class="col s4">
-				                	<div class="card hoverable">
-				                		<div class="card-content">
-				              				<span class="card-title">Extraer malla</span>
-				              				<p>Extraiga una malla curricular ya existente en el sistema UNICO</p>
-				              				<div class="card-action">
-             									<a class="waves-effect waves-light btn color_primario">Extraer<i class="mdi mdi-content-duplicate right"></i></a>
-            								</div>
-				              			</div>
-				              		</div>
-			              		</div>
-			                </div>
+			              	</div>
 			            </div>
 			        </div>
 			    </div>
