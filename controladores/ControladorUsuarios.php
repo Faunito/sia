@@ -2,10 +2,11 @@
 
 //require_once ("../conexiones/conexiones.php");
 //require_once ("../conexiones/ConexionSep.php");
-require_once ('../negocios/Profesor.php');
+//require_once ('../negocios/Profesor.php');
+require_once('../autoload.php');
 
 class UserControllerClass{
-	private var $profesor;
+	var $profesor;
 
 	public function getProfesor()
 	{
@@ -17,7 +18,7 @@ class UserControllerClass{
 		//llamada al profe solamente por haora
 		if($tipoFuncionario == 'profesor'){
 			//se instancia la clase profesor
-			$profesor = new Profesor();
+			$profesor = new Profesor;
 			//Se agregan los datos de Extracion de DB
 			$profesor->setpassword($email);
 			$profesor->setcorreoElectronico($pass);
@@ -25,7 +26,7 @@ class UserControllerClass{
 			$profesor->getBDProfesor()->Get($profesor);
 		}
 		else{
-			$profesor = NULL
+			$profesor = NULL;
 		}
 	}
 }

@@ -1,11 +1,14 @@
 <?php
-require_once ('EvaluacionPracticaEmpleador.php');
+use profesor;
+/*
+require_once ('../datos/BDEvaluacionPracticaEmpleador.php');
 require_once ('Competencia.php');
 require_once ('Funcionario.php');
-require_once ('EvaluacionPracticaProfesor.php');
+require_once ('../datos/BDEvaluacionPracticaProfesor.php');
 require_once ('Evaluacion.php');
 require_once ('ProgramaCurricular.php');
-require_once ('../dato/BDProfesor.php');
+require_once ('../datos/BDProfesor.php');*/
+require_once ('../autoload.php');
 
 /**
  * @author Freddy

@@ -28,7 +28,7 @@ class BDProfesor implements ICrud
 			$var->setarea("Informatica");
 			$var->settitulo("N/A");
 		}
-		else $var NULL;
+		else $var = NULL;
 	}
 
 	public function Insert($var)

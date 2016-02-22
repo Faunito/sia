@@ -1,8 +1,9 @@
 <?php
-require_once ('MallaCurricular.php');
-require_once ('Profesor.php');
-require_once ('Competencia.php');
-require_once ('ActividaddCompensacion.php');
+//require_once ('MallaCurricular.php');
+//require_once ('Profesor.php');
+require_once ('../autoload.php');
+//require_once ('Competencia.php');
+//equire_once ('ActividaddCompensacion.php');
 
 /**
  * @author Freddy
@@ -18,11 +19,10 @@ class DirectordeCarrera extends Profesor
 	var $m_Competencia;
 	var $m_ActividaddCompensacion;
 
-	function DirectordeCarrera()
+	function __construct()
 	{
+        parent::__construct();
 	}
-
-
 
 	/**
 	 * 
@@ -43,9 +43,9 @@ class DirectordeCarrera extends Profesor
 	 * @param codigoMalla
 	 * @param codigoCarrera
 	 * @param duracionMalla
-	 * @param añoMalla
+	 * @param anioMalla
 	 */
-	function crearMallaCurricular($codigoMalla, $codigoCarrera = 2348, $duracionMalla, $añoMalla)
+	function crearMallaCurricular($codigoMalla, $codigoCarrera , $duracionMalla, $anioMalla)
 	{
 	}
 
