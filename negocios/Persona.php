@@ -6,7 +6,7 @@
  * @version 1.0
  * @created 19-Feb.-2016 19:48:56
  */
-class Persona
+abstract class Persona
 {
 
 	var $apellidoMaterno;

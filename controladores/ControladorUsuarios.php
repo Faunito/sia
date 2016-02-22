@@ -1,16 +1,17 @@
 <?php 
 
-//require_once ("../conexiones/conexiones.php");
-//require_once ("../conexiones/ConexionSep.php");
-//require_once ('../negocios/Profesor.php');
-require_once('../autoload.php');
+require_once ('../negocios/Profesor.php');
 
-class UserControllerClass{
-	var $profesor;
+class ControladorUsuarios{
+	var $user;
 
 	public function getProfesor()
 	{
-		return $profesor;
+        if (isset($user)){
+            return $user;            
+        }
+        else return $user;
+		
 	}
 
 	public function login($email,$pass,$tipoFuncionario)
@@ -18,15 +19,21 @@ class UserControllerClass{
 		//llamada al profe solamente por haora
 		if($tipoFuncionario == 'profesor'){
 			//se instancia la clase profesor
-			$profesor = new Profesor;
+			$user = new Profesor();
 			//Se agregan los datos de Extracion de DB
-			$profesor->setpassword($email);
-			$profesor->setcorreoElectronico($pass);
+			$user -> setcorreoElectronico($email);
+            $user -> setpassword($pass);			
 			//Comunicación con la Capa de Datos
-			$profesor->getBDProfesor()->Get($profesor);
-		}
+			 $user -> getBDProfesor() -> Get($user);
+		}/*
 		else{
-			$profesor = NULL;
-		}
+            if($tipoFuncionario == 'secretaria'){
+                $user = new Secretaria();
+                //setear datos de clase secretaria
+                $user -> setpassword();
+                $user -> setname();
+                //crear y guardar sesion ? 
+            }          
+		}*/
 	}
 }

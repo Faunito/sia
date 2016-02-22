@@ -1,7 +1,6 @@
-<?php
+<?php 
+
 require_once ('ICrud.php');
-require_once ('../negocios/Profesor.php');
-require_once ('../conexiones/DBSingleton.php');
 
 class BDProfesor implements ICrud
 {	
@@ -9,7 +8,7 @@ class BDProfesor implements ICrud
 	{
 		if(get_class($var) == "Profesor")
 		{
-			//Obtencion de la conexxion
+			//Obtencion de la conexion
 			$conn = DBSingleton::getInstance();
 			//Preparación y Obtención
 			$aux = $conn->getConnection()->prepare("SELECT * FROM profesor WHERE email = :email AND password = :password");
@@ -26,7 +25,7 @@ class BDProfesor implements ICrud
 			$var->setcorreoElectronico($res->email);
 			$var->setpassword($res->password);
 			$var->setarea("Informatica");
-			$var->settitulo("N/A");
+			$var->settitulo("N/A");            
 		}
 		else $var = NULL;
 	}
@@ -46,4 +45,5 @@ class BDProfesor implements ICrud
 		
 	}
 }
+
 ?>

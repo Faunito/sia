@@ -6,7 +6,7 @@ require_once ('Persona.php');
  * @version 1.0
  * @created 19-Feb.-2016 19:48:56
  */
-class Funcionario extends Persona
+abstract class Funcionario extends Persona
 {
 
 	var $cargo;

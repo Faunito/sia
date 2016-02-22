@@ -1,15 +1,15 @@
 <?php
-use profesor;
 /*
 require_once ('../datos/BDEvaluacionPracticaEmpleador.php');
-require_once ('Competencia.php');
-require_once ('Funcionario.php');
+require_once ('Competencia.php');*/
+require_once ('Funcionario.php');/*
 require_once ('../datos/BDEvaluacionPracticaProfesor.php');
 require_once ('Evaluacion.php');
 require_once ('ProgramaCurricular.php');
 require_once ('../datos/BDProfesor.php');*/
-require_once ('../autoload.php');
-
+//require_once ('../autoload.php');
+require_once ('Funcionario.php');
+require_once ('../datos/BDProfesor.php');
 /**
  * @author Freddy
  * @version 1.0
@@ -25,21 +25,16 @@ class Profesor extends Funcionario
 	var $m_ProgramaCurricular;
 	var $bdprofesor;
 
-	function __construct()
+	public function __construct()
 	{
 		$bdprofesor = new BDProfesor(); 
 	}
 
 	function getBDProfesor()
-	{	
-		return $bdprofesor;
+	{       
+        return isset($bdprofesor);    
 	}
 
-	/**
-	 * 
-	 * @param Competencia
-	 * @param PracticaEmpleador
-	 */
 	function GenerarCuadroComparativo($Competencia, $PracticaEmpleador)
 	{
 	}
@@ -53,34 +48,22 @@ class Profesor extends Funcionario
 	{
 		return $this->titulo;
 	}
-
-	/**
-	 * 
-	 * @param rutAlumno
-	 */
+    
 	function nuevaEvaluacionProfesor($rutAlumno)
 	{
 	}
 
-	/**
-	 * 
-	 * @param newVal
-	 */
 	function setarea($newVal)
 	{
 		$this->area = $newVal;
 	}
 
-	/**
-	 * 
-	 * @param newVal
-	 */
 	function settitulo($newVal)
 	{
 		$this->titulo = $newVal;
 	}
 
-	//Funcion de Comprobación de Extracion de Datos
+	//Funcion de Comprobación de Extraccion de Datos
 	function toString()
 	{
 		$stringbulder = $this->getrut() . "\n";
@@ -96,4 +79,5 @@ class Profesor extends Funcionario
 	}
 
 }
+
 ?>

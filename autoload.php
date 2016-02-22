@@ -21,8 +21,20 @@
         include $file;
         //include "datos/" . $clase . ".php";        
     }
+    /*
+    function controladoresLoader($clase){
+        $filename = $clase . '.php';
+        $file ='controladores/' . $filename;
+        if (!file_exists($file))
+        {
+            return false;
+        }
+        include $file;
+        //include "datos/" . $clase . ".php";        
+    }*/
 
     spl_autoload_register('negociosLoader');
     spl_autoload_register('datosLoader');   
+   // spl_autoload_register('controladoresLoader');
    
 ?>

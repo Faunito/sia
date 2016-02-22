@@ -1,7 +1,7 @@
 <?php
 //require_once ('MallaCurricular.php');
-//require_once ('Profesor.php');
-require_once ('../autoload.php');
+require_once ('Profesor.php');
+//require_once ('../autoload.php');
 //require_once ('Competencia.php');
 //equire_once ('ActividaddCompensacion.php');
 
